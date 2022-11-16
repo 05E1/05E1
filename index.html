@@ -74,10 +74,10 @@
 </head>
 
 
-<body>
+<body ng-controller="main_controller">
 
     <!-- header -->
-    <header ng-controller="main_controller">
+    <header>
         <div class="header bg-warning p-0 sticky-top ">
             <div class="row gx-0 d-none d-lg-flex ">
                 <div class="col-lg-7 px-5 text-start ">
@@ -383,8 +383,18 @@
     <!--============================================================== Kết thúc phần header  -->
 
 
+
+    <!-- ======================================================
+                                                    CAROUSEL SLIDER  
+==============================================================================-->
+
+    <!-- ======================================================
+                                             END   ENDROUSEL SLIDER  
+    ==============================================================================-->
+
+
     <!-- ng-controller="SearchController " -->
-    <section ng-show="SectionProducts " class="product mt-4 ">
+    <section ng-show="SectionProducts" class="product mt-4 ">
         <div class="container ">
             <div id="nz-div " class="row tde ">
                 <div class="col-lg-4 col-md-4 ">
@@ -448,9 +458,9 @@
                         <div class="product__details__slider__content ">
                             <div class="product__details__pic__slider owl-carousel ">
                                 <img data-hash="product-1 " class="product__big__img " src="img/product/details/product-1.jpg " alt=" ">
-                                <img data-hash="product-2 " class="product__big__img " src="img/product/details/product-3.jpg " alt=" ">
+                                <!-- <img data-hash="product-2 " class="product__big__img " src="img/product/details/product-3.jpg " alt=" ">
                                 <img data-hash="product-3 " class="product__big__img " src="img/product/details/product-2.jpg " alt=" ">
-                                <img data-hash="product-4 " class="product__big__img " src="img/product/details/product-4.jpg " alt=" ">
+                                <img data-hash="product-4 " class="product__big__img " src="img/product/details/product-4.jpg " alt=" "> -->
                             </div>
                         </div>
                     </div>

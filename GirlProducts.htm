@@ -32,6 +32,24 @@
                     <h3 class="tde"><span class="null">Products {{IDGroups}}</span></h3>
                 </div>
             </div>
+            <div ng-controller="MenController">
+                <span class="input">
+                    <select ng-model="catchange" class="cs-select cs-skin-underline">
+                        <option value="none">Guci</option>
+                        <option value="photography">Fotografie</option>
+                        <option value="text">Text</option>
+                        <option value="digital">Digital</option>
+                        <option value="print">Print</option>
+                        <option value="consulting">Beratung</option>
+                        <option value="advertising">Werbung</option>
+                        <option value="socialmedia">Social Media</option>
+                        <option value="strategy">Strategie</option>
+                        <option value="conception">Konzeption</option>
+                        <option value="film">Film</option>
+                        <option value="tv">TV</option>
+                    </select>
+                </span>
+            </div>
         </div>
         <div class="row property__gallery ">
             <div class="col-lg-3 col-md-4 col-sm-6 mix women" ng-repeat="x in DataProdut | filter:{IDGroup: 'Girl'} ">

@@ -31,11 +31,13 @@
                 <div>
                     <h3 class="tde"><span class="null">Products {{IDGroups}}</span></h3>
                 </div>
+
             </div>
         </div>
 
         <div class="row property__gallery " ng-controller="MenController">
-            <div class="col-lg-3 col-md-4 col-sm-6 mix women" ng-repeat="x in DataProdut | filter:{IDGroup: 'Men'} ">
+            <div class="col-lg-3 col-md-4 col-sm-6 mix women" ng-repeat="x in DataProdut | filter:{IDGroup: 'Men'} ">jb
+                <!-- DataProdut -->
                 <div class="product__item">
                     <div class="product__item__pic set-bg" style="background-image: url('img/product/{{x.Images[0]}}' );height: 50vh; ">
                         <div class="label new ">New</div>
