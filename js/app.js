@@ -1046,7 +1046,14 @@ app.controller('main_controller', function($scope) {
 
 
     ];
+    //SLIDER MAIN 
 
+    $scope.links = [
+        { src: "img/Slide1.jpg", alt: "", caption: "" },
+        { src: "img/Slide2.png", alt: "", caption: "" },
+        { src: "img/Slide3.png", alt: "", caption: "" },
+        { src: "img/Slide4.png", alt: "", caption: "" },
+    ];
     // DATA - PRODUCTS 188 -  746 ====================================================
 
 
@@ -1109,7 +1116,21 @@ app.controller('main_controller', function($scope) {
 
 
 });
-
+app.directive('carousel', function($timeout) {
+    return {
+        restrict: 'E',
+        scope: {
+            links: '='
+        },
+        templateUrl: 'index.html',
+        link: function(scope, element) {
+            $timeout(function() {
+                $('.carousel-indicators li', element).first().addClass('active');
+                $('.carousel-inner .item', element).first().addClass('active');
+            });
+        }
+    }
+});
 app.controller("SearchController", ["$scope", "$http",
     function($scope, $http) {
 
